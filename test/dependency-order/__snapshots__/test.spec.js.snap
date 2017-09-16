@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`plugin must have correct css order 1`] = `
+".c { color: blue; }
+.e { color: blue; }
+.b { color: blue; }
+.a { color: blue; }
+.d { color: blue; }
+"
+`;

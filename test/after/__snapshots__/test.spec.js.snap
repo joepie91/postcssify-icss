@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`after no postcss-calc 1`] = `
+"
+.button {
+  background-color: calc(2px + 2px);
+}
+"
+`;
+
+exports[`after postcss-calc 1`] = `
+"
+.button {
+  background-color: 4px;
+}
+"
+`;

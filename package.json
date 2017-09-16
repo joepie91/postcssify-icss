@@ -1,0 +1,45 @@
+{
+  "name": "postcssify-icss",
+  "version": "1.0.0",
+  "description": "browserify transform postcss icss css modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlhopf/postcssify-icss.git"
+  },
+  "keywords": [
+    "postcss",
+    "browserify",
+    "transform"
+  ],
+  "author": "Carl Hopf <npm@carlhopf.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlhopf/postcssify-icss/issues"
+  },
+  "homepage": "https://github.com/carlhopf/postcssify-icss#readme",
+  "dependencies": {
+    "dependency-graph": "^0.5.0",
+    "object-assign": "^4.1.1",
+    "postcss": "^6.0.9",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "browserify": "^14.4.0",
+    "jest": "^21.0.2",
+    "mocha": "^3.5.0",
+    "postcss-calc": "^6.0.0",
+    "postcss-discard-duplicates": "^2.1.0",
+    "postcss-icss-composes": "^2.0.3",
+    "postcss-icss-selectors": "^2.0.3",
+    "postcss-icss-values": "^2.0.1",
+    "postcss-import": "^10.0.0",
+    "postcss-modules-resolve-imports": "git+https://git@github.com/carlhopf/postcss-modules-resolve-imports.git",
+    "postcss-nested": "^2.1.2",
+    "raw-body": "^2.3.0"
+  }
+}

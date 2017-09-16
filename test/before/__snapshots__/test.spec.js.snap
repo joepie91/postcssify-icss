@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`before nested 1`] = `
+"
+  
+  .button {
+  background-color: red;
+}
+  
+  .button:active {
+    background-color: blue;
+  }
+"
+`;
+
+exports[`before not nested 1`] = `
+".button {
+  background-color: red;
+  
+  &:active {
+    background-color: blue;
+  }
+}
+"
+`;

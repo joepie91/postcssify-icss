@@ -1,0 +1,5 @@
+@value width from "./size.css";
+
+:global(.button) {
+  background-color: calc(2px + width);
+}

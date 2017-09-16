@@ -1,0 +1,4 @@
+@value c from "./c.css";
+@value e from "./e.css";
+
+.b { color: blue; }

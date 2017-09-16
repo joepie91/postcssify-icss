@@ -1,0 +1,9 @@
+@value a from "./a.css";
+@value b from "./b.css";
+@value c from "./c.css";
+@value d from "./d.css";
+@value e from "./e.css";
+
+.end {
+  color: blue;
+}

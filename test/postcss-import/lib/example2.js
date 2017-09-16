@@ -1,0 +1,1 @@
+require('./subfolder/import.css');
