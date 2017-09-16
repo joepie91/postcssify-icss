@@ -12,6 +12,15 @@ as a stream via ```bundle.on('css stream', (stream) => {})```.
 This plugin must be installed before ```watchify```.
 
 
+ICSS plugins
+------------
+
+Runs the following plugins, in displayed order
+
+* postcss-icss-values^2.0.0
+* postcss-icss-selectors^2.0.0 (global mode)
+* postcss-icss-composes^2.0.0
+* carlhopf/postcss-modules-resolve-imports^1.3.0
   
 
 API usage
