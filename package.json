@@ -1,6 +1,6 @@
 {
   "name": "postcssify-icss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "browserify transform postcss icss css modules",
   "main": "index.js",
   "scripts": {

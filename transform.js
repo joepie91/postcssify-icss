@@ -40,7 +40,6 @@ module.exports = function transform (file, opts) {
 							m.type === 'import';
 					})
 					.map(m => {
-						
 						if (!depgraph.hasNode(file)) {
 							depgraph.addNode(m.from, {
 								ast: m.ast,
@@ -48,6 +47,10 @@ module.exports = function transform (file, opts) {
 							
 							m.dependencies.forEach(dep => {
 								depgraph.addDependency(m.from, dep);
+							});
+						} else {
+							depgraph.setNodeData(m.from, {
+								ast: m.ast,
 							});
 						}
 						
