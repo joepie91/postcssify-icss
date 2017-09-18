@@ -1,6 +1,6 @@
 const browserify = require('browserify');
 const rawBody = require('raw-body');
-const postcssify2 = require('../../index');
+const postcssify = require('../../index');
 const path = require('path');
 const util = require('util');
 const vm = require('vm');
@@ -18,7 +18,7 @@ describe('exports', function () {
 			standalone: 'standalone',
 		});
 		
-		bundle.plugin(postcssify2, {
+		bundle.plugin(postcssify, {
 			before: [
 				require('postcss-nested'),
 			],

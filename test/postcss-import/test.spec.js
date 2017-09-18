@@ -1,7 +1,7 @@
 const assert = require('assert');
 const browserify = require('browserify');
 const rawBody = require('raw-body');
-const postcssify2 = require('../../index');
+const postcssify = require('../../index');
 const path = require('path');
 
 describe('plugin', function () {
@@ -13,7 +13,7 @@ describe('plugin', function () {
 	beforeEach(function () {
 		var bundle = browserify();
 		
-		bundle.plugin(postcssify2, {
+		bundle.plugin(postcssify, {
 			before: [
 				require('postcss-import')(),
 			],

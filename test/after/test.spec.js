@@ -1,6 +1,6 @@
 const browserify = require('browserify');
 const rawBody = require('raw-body');
-const postcssify2 = require('../../index');
+const postcssify = require('../../index');
 const path = require('path');
 
 describe('after', function () {
@@ -10,7 +10,7 @@ describe('after', function () {
 	beforeEach(() => {
 		var bundle = browserify();
 		
-		bundle.plugin(postcssify2, {
+		bundle.plugin(postcssify, {
 			after: [
 				require('postcss-calc'),
 			],
@@ -44,7 +44,7 @@ describe('after', function () {
 	beforeEach(() => {
 		var bundle = browserify();
 		
-		bundle.plugin(postcssify2, {
+		bundle.plugin(postcssify, {
 			after: [],
 		});
 		

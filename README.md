@@ -1,7 +1,7 @@
 browserify postcss plugin
 =========================
 
-Compile icss modules using browserify.
+Compile [css-modules](https://github.com/css-modules/css-modules) using browserify.
 
 Runs ```postcss.process()``` for each ```require('./file.css')```.
 
@@ -9,7 +9,7 @@ The generated css for each require() is collected,
 sorted by dependencies and available 
 as a stream via ```bundle.on('css stream', (stream) => {})```.
   
-This plugin must be installed before ```watchify```.
+This plugin supports, but must be added before, [watchify](https://github.com/browserify/watchify).
 
 
 ICSS plugins
@@ -17,10 +17,10 @@ ICSS plugins
 
 Runs the following plugins, in displayed order
 
-* postcss-icss-values^2.0.0
-* postcss-icss-selectors^2.0.0 (global mode)
-* postcss-icss-composes^2.0.0
-* carlhopf/postcss-modules-resolve-imports^1.3.0
+* [postcss-icss-values](https://github.com/css-modules/postcss-icss-values)^2.0.0
+* [postcss-icss-selectors](https://github.com/css-modules/postcss-icss-selectors)^2.0.0 (global mode)
+* [postcss-icss-composes](https://github.com/css-modules/postcss-icss-composes)^2.0.0
+* [carlhopf/postcss-modules-resolve-imports](https://github.com/carlhopf/postcss-modules-resolve-imports)^1.3.0
   
 
 API usage
@@ -50,6 +50,7 @@ bundle.plugin(postcssify, {
   // run after icss compilation, on complete css bundle
   after: [
     require('postcss-calc'),
+    require('postcss-discard-duplicates'),
     require('autoprefixer'),
   ],
 });
@@ -81,3 +82,13 @@ var html = `
   
 document.body.innerHTML = html;
 ```
+
+Motivation
+----------
+
+Similar solutions already exist, but
+
+[css-modulesify](https://github.com/css-modules/css-modulesify)
+
+* depends on a "verbose" [css-modules-loader-core](https://github.com/css-modules/css-modules-loader-core)
+* still runs postcss-icss v^1.0.0 plugins

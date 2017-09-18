@@ -1,0 +1,11 @@
+@value button as extendButton from "./button.css";
+
+/* overrides background-color from button.css */
+.extendButton {
+  background-color: green;
+}
+
+/* new local class, not related to button.css */
+:local(.button) {
+  font-size: 1em;
+}

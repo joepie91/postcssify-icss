@@ -1,0 +1,5 @@
+@value button as extendButton from "./buttonz.css";
+
+.extendButton {
+  background-color: green;
+}
