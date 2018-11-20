@@ -28,15 +28,16 @@
     "dependency-graph": "^0.5.0",
     "object-assign": "^4.1.1",
     "postcss": "^6.0.9",
-    "through2": "^2.0.3",
     "postcss-icss-composes": "^2.0.3",
     "postcss-icss-selectors": "^2.0.3",
     "postcss-icss-values": "^2.0.1",
-    "postcss-modules-resolve-imports": "git+https://git@github.com/carlhopf/postcss-modules-resolve-imports.git"
+    "postcss-modules-resolve-imports": "git+https://git@github.com/carlhopf/postcss-modules-resolve-imports.git",
+    "through2": "^2.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "browserify": "^14.4.0",
+    "eslint": "^5.9.0",
     "jest": "^21.0.2",
     "mocha": "^3.5.0",
     "postcss-calc": "^6.0.0",
