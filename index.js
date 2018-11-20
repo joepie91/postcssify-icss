@@ -66,9 +66,9 @@ module.exports = function (browserify, opts) {
 		
 		// icss modules
 		require('postcss-icss-values'),
-	  require('postcss-icss-selectors')({ mode: 'global' }),
-	  require('postcss-icss-composes'),
-	  require('postcss-modules-resolve-imports')({}),
+		require('postcss-icss-selectors')({ mode: 'global' }),
+		require('postcss-icss-composes'),
+		require('postcss-modules-resolve-imports')({}),
 	];
 	
 	var instance = postcss(plugins);
